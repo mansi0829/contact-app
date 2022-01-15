@@ -1,8 +1,14 @@
 import React from 'react'           //rafce
+import { useSelector } from 'react-redux'
 
 const AddContact = () =>
 {
+    const contacts = useSelector((state) => state);
+    console.log(contacts);
+
     return (
+
+
         <div className='container'>
             <div className="row p-5">
                 <h1 className="display-3 my-2 text-center">
