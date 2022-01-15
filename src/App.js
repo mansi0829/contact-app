@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import AddContact from './components/AddContact';
+import EditContact from './components/EditContact';
 
 const App = () =>
 {
@@ -15,7 +16,7 @@ const App = () =>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add" element={<AddContact />} />
-        <Route path="/edit/:id" element="Edit Component" />
+        <Route path="/edit/:id" element={<EditContact />} />
       </Routes>
     </div>
   );
