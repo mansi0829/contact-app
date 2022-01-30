@@ -6,7 +6,6 @@ import { toast } from 'react-toastify';
 
 const EditContact = () => {
     const { id } = useParams();
-
     const contacts = useSelector(state => state);
     const currentContact = contacts.find(contact => contact.id === parseInt(id));
     const [name, setName] = useState("");
